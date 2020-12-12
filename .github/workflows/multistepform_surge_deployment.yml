@@ -39,4 +39,4 @@ jobs:
 
     - name: Deployment On Surge
                       
-      run: surge ./build https://bootcamp2020project10.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}} 
+      run: surge ./build https://bootcamp2020-project10.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}} 

@@ -25,7 +25,7 @@ export const MultiStepForm = () => {
     profession:'',
     hobby:'',
     city:'',
-    bio:''
+    bio:'',
   });
   const steps = getSteps();
   const nextStep = () => setStep(prev => prev + 1);
@@ -40,7 +40,7 @@ export const MultiStepForm = () => {
       profession:'',
       hobby:'',
       city:'',
-      bio:''
+      bio:'',
     });
   };
   const getStepContent = (stepIndex: number) => {

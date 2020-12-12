@@ -66,12 +66,12 @@ return (
         nextStep();
         }}
         > 
-        {({errors, handleChange, touched,values}) => (
+        {({errors,handleChange, touched,values}) => (
         <Form className={classes.form}>
             <Grid container spacing={2}>
             <Grid item xs={12}>
             <TextField
-            error={errors.profession && touched.profession}
+            error={errors.profession && touched.profession?true:false}
             autoComplete="profession"
             name="profession"
             variant="outlined"
@@ -86,7 +86,7 @@ return (
             </Grid>
             <Grid item xs={12}>
             <TextField
-            error={errors.hobby && touched.hobby}
+            error={errors.hobby && touched.hobby?true:false}
             variant="outlined"
             fullWidth
             onChange={handleChange}
@@ -100,7 +100,7 @@ return (
             </Grid>
             <Grid item xs={12}>
             <TextField
-            error={errors.city && touched.city}
+            error={errors.city && touched.city?true:false}
             variant="outlined"
             fullWidth
             onChange={handleChange}
@@ -114,7 +114,7 @@ return (
             </Grid>
             <Grid item xs={12}>
             <TextField
-            error={errors.bio && touched.bio}
+            error={errors.bio && touched.bio?true:false}
             variant="outlined"
             fullWidth
             onChange={handleChange}

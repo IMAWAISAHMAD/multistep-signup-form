@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { Formik, Form } from 'formik';
+import { Formik, Form} from 'formik';
 import * as yup from 'yup';
 import {SignupFormProps} from '../types';
 
@@ -72,7 +72,7 @@ return (
             <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
             <TextField
-            error={errors.firstName && touched.firstName}
+            error={errors.firstName && touched.firstName?true:false}
             autoComplete="fname"
             name="firstName"
             variant="outlined"
@@ -87,7 +87,7 @@ return (
             </Grid>
             <Grid item xs={12} sm={6}>
             <TextField
-            error={errors.lastName && touched.lastName}
+            error={errors.lastName && touched.lastName?true:false}
             variant="outlined"
             fullWidth
             onChange={handleChange}
@@ -101,7 +101,7 @@ return (
             </Grid>
             <Grid item xs={12}>
             <TextField
-            error={errors.email && touched.email}
+            error={errors.email && touched.email?true:false}
             variant="outlined"
             fullWidth
             onChange={handleChange}
@@ -115,7 +115,7 @@ return (
             </Grid>
             <Grid item xs={12}>
             <TextField
-            error={errors.password && touched.password}
+            error={errors.password && touched.password?true:false}
             variant="outlined"
             fullWidth
             onChange={handleChange}

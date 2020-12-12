@@ -38,7 +38,7 @@ export type PersonalDFormProps={
     formData:PersonalDFormValues
     setFormData:Function,
     nextStep:Function,
-    prevStep:Function
+    prevStep:Function,
 }
 
 //Confirm Page Props
@@ -53,3 +53,4 @@ export type ConfirmPageProps={
 export type SuccessPageProps = {
     handleReset:Function
 }
+
